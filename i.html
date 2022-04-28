@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .div1 {
+        width: 100px;
+        height: 100px;
+        display: flex;
+      }
+      #div1,
+      #div2,
+      #div3,
+      #div4,
+      #div5 > div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      #div2 > div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      /* .{
+        display: flex;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="xoso">
+      <div id="div1">
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+      </div>
+      <div id="div2">
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+      </div>
+      <div id="div3">
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+      </div>
+      <div id="div4">
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+        <div>10</div>
+      </div>
+    </div>
+    <script>
+      for (var i = 1; i <= 20; i++) {
+
+(function(i){ 
+
+    setTimeout(function() { console.log(i) }, 1000);
+
+})(i);
+
+}
+    </script>
+  </body>
+</html>
